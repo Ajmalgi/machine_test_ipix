@@ -1,0 +1,136 @@
+
+<div class="row Career ">
+    <div class="col-5">
+        <div class="Career_headding d-flex align-items-center justify-content-center">
+            <div>
+                <h1>Career</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus sequi <br> incidunt nobis
+                    nemo, corporis, atque pariatur voluptas doloribus reprehend<br> ipsum tempora nihil nocommodi
+                    deserunt.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br><br><br>
+<div class="container">
+    <div class="row ">
+        <div class="col-lg-7 col-md-12">
+            <div class="Job_opening d-flex align-items-center ">
+                <div class="ms-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ea nobis, <br> dignissimos
+                        nihil <br> veniam nam esse facilis, voluptatibus velit voluptates reprehenderit quibusdam. <br>
+                        Magnam deleniti rem dolores optio porro. Ipsum consequuntur consectetu <br> commodi totam
+                        officia harum amet tempore, sapiente neque laudantium <br> .</p>
+                    <button id="getstrated" class="btn nav-btn " type="button">Job Openings</button>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="col-lg-5 col-md-12 Job_img">
+            <img src="\assets\images\student.jpg" alt="">
+
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="row why_work">
+        <div class=" col-lg-4">
+            <img src="{{why_work.cms.image}}" alt="">
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-6">
+            <h1>{{why_work.cms.title}}</h1>
+            <hr class="line">
+            <br>
+
+            <div [innerHTML]="why_work.cms.description"></div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+
+  <div class="row Perks_benefits" style="background-image: url({{Perks.cms.image}});">
+    <div class="col-8">
+      <h1>{{Perks.cms.title}}</h1>
+      <hr class="line">
+      <br>
+      <div class="Perks_des"><h4 [innerHTML]="Perks.cms.description"></h4></div>
+      
+    </div>
+    <div class="col-4"></div>
+  </div>
+  <div class="row">
+    <div class="col-12 Perks_sidebox d-flex text-success justify-content-center align-items-center">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid itaque maiores sed voluptates earum atque quod recusandae facere dolorum impedit illum, molestias obcaecati laborum, explicabo a ut nisi esse magni quos enim quibusdam fugit laboriosam minus. Veniam beatae obcaecati nemo, delectus ducimus nobis iste!</p>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="row Career_opp">
+    <div class="col-12">
+        <div class="container">
+        <div class="row text-center mt-5">
+            <div class="col-12 mt-4"><h1>Career Oppertunity</h1></div>
+            <br><br><br>
+            <hr  style="margin:auto;" class="line mt-4">
+        </div>
+        <br>
+        <div class="row d-flex justify-content-around">
+            <div class="col-md-3"></div>
+            <div class="col-md-1 col-sm-2">All</div>
+            <div class="col-md-1 col-sm-2">Affrica</div>
+            <div class="col-md-1 col-sm-2">America</div>
+            <div class="col-md-1 col-sm-2">India</div>
+            <div class="col-md-1 col-sm-2">London</div>
+            <div class="col-md-1 col-sm-2">UAE</div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>
+
+            <div class="education p-5">
+                <div class="container  ">
+                <div class="row">
+                    <div class="col-9">
+                        <h4>Marketing</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="col-3">
+                        <h4>&nbsp;</h4> 
+                        <p>New York</p></div>
+                        <hr>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-4">
+                        <h5 >{{education[0]['category_name']}}</h5>
+                        <br>
+                        <h6 *ngFor="let edu of education">{{edu.title}}</h6>
+                    </div>
+                    <div class="col-4"></div>
+                    <div class="col-2"></div>
+                    <div class="col-2">
+                        <h5>&nbsp;</h5>
+                        <br>
+                        <h6 *ngFor="let edu of education" >{{edu.location}}</h6></div>
+                </div>
+             
+            </div>
+        </div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div class="call_and_arrow">
+    <div  class="p-4 mb-3 d-flex align-items-center justify-content-center call">
+        <h2 ><i class="bi bi-telephone-fill"></i></h2> 
+       </div>
+
+    <div class="p-4 mt-4 d-flex align-items-center justify-content-center call">
+        <h2 ><i class="bi bi-arrow-bar-up"></i></h2> 
+       </div>
+     
+  </div>

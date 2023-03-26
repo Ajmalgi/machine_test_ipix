@@ -1,0 +1,29 @@
+#getstrated{
+    background-color: rgb(219, 88, 18);
+    color: white;
+    border-radius: 0;
+    width:9rem;
+    margin-right: 7rem;
+}
+
+.navbar-nav{
+    margin-right: 3rem;
+}
+.material-symbols-outlined{
+    font-size:26px;
+}
+
+.brand{
+    margin-left:5rem;
+}
+
+@media screen and (max-width: 750px) {
+    .brand{
+        margin-left:0;
+    }
+}
+
+.navbar{
+    position: sticky;
+    top:0px;
+}

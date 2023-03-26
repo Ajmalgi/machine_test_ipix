@@ -1,0 +1,24 @@
+footer{
+    background-color: #22374b;
+    color:white;
+}
+
+#f_edubex{
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.fedubex{
+    margin-top: 5rem;
+}
+
+#fbtn{
+    position: absolute;
+    margin-left: -23px;
+    height: 29px;
+    color:white;
+}
+.btn-dark{
+width: 10rem;
+height: 40px;
+}

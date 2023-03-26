@@ -1,0 +1,196 @@
+<div class="container">
+    <div class="row Career ">
+        <div class="col-6">
+            <div class="Career_headding d-flex align-items-center justify-content-center">
+                <div>
+                    <h1>Career</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus sequi <br> incidunt nobis
+                        nemo, corporis, atque pariatur voluptas doloribus reprehend<br> ipsum tempora nihil nocommodi
+                        deserunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-8">
+            <strong class="icon"><span class="material-symbols-outlined edub"> ac_unit </span> EDUBEX</strong>
+            <br><br>
+            <h5>Education</h5>
+            <br>
+            <p>{{career_data.data.title}}</p>
+            <br>
+            <h5>Employment Type</h5>
+            <br>
+            <p>{{career_data.data.employment_type}}</p>
+            <br>
+            <h5>Location</h5>
+            <br>
+            <p>{{career_data.data.location}}</p>
+            <p [innerHTML]="career_data.data.description"></p>
+            <br>
+            <h5>Career Description</h5>
+            <br>
+            <p>{{career_data.data.meta_description}}</p>
+            <br>
+            <h5>About Edubex</h5>
+            <br>
+            <p>{{career_data.data.meta_description}}</p>
+
+        </div>
+        <div class="col-4">
+            <button class=" justify-content-end side_btn">Apply</button>
+            <br><br>
+            <div class="side_apply border-left ">
+
+                <p>Seniortiy Level</p>
+                <p>Associate</p>
+                <p>Industry</p>
+                <p>Information Technology & Services Computer Software Financial Service </p>
+                <p>Employment Type</p>
+                <p>Full time</p>
+                <p>Job Functions</p>
+                <p>Quality Assurance</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-5">
+            <h1>&nbsp;</h1>
+            <h1>&nbsp;</h1>
+            <h1>&nbsp;</h1>
+            <img id="formimg" src="/assets/images/formpic.jpg" alt="">
+        </div>
+        <div class="col-7">
+
+            <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                <div class="card-body p-4 p-md-5">
+                    <h3> Apply for this job </h3>
+                    <p id="linkedin">Please sign in to apply with linked in</p>
+                    <button class="btn linkedin_btn">Sign in With Linkedin</button>
+                    <hr class="mt-4">
+
+                    <form [formGroup]="Job_apply" (submit)="onSubmit()">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="form-outline">
+                                    <label class="form-label" for="firstName">First Name<span class="star">*</span></label>
+                                    <input formControlName="first_name" type="text" id="firstName"
+                                        class="form-control form-control-lg" />
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-outline">
+                                    <label class="form-label" for="lastName">Last Name<span class="star">*</span></label>
+                                    <input formControlName="last_name" type="text" id="lastName"
+                                        class="form-control form-control-lg" />
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4 pb-2">
+
+                                <div class="form-outline">
+                                    <label class="form-label" id="emaill">Email<span class="star">*</span></label>
+                                    <input formControlName="email" type="email" id="email"
+                                        class="form-control form-control-lg" />
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 mb-4 pb-2">
+                                <div class="form-outline">
+                                    <label class="form-label" for="phone">Phone<span class="star">*</span></label>
+                                    <input formControlName="phone" type="number" id="phone"
+                                        class="form-control form-control-lg" />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="location">Location(City)</label>
+                                        <input formControlName="location" type="text" id="location"
+                                            class="form-control form-control-lg" />
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6 mb-4 pb-2">
+                                    <p> Resume/CV* <span
+                                            style="color:rgb(244, 89, 6); letter-spacing: -1px;">Attach,Dropbox,G
+                                            Drive</span></p>
+                                            <input (change)="onresumeChange($event)" formControlName="resume" type="file" 
+                                            class="form-control form-control-lg res_cover"/>
+                                    <p> cover Letter* <span 
+                                        style="color:rgb(244, 89, 6); letter-spacing: -1px;">Attach,Dropbox,G
+                                            Drive,Paste</span> </p>
+                                            <input (change)="oncoverChange($event)" formControlName="cover_letter" type="file" 
+                                            class="form-control  form-control-lg res_cover " />
+
+                                </div>
+                                <hr>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="linkedin">Linkedin Profile</label>
+                                        <input formControlName="linkedin" type="url" id="linkedin"
+                                            class="form-control form-control-lg" />
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-outline">
+                                        <label class="form-label" for="website">Website</label>
+                                        <input formControlName="website" type="url" id="website"
+                                            class="form-control form-control-lg" />
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-8"></div>
+                                <div class="col-4"><button id="submit_btn"> Submit Application </button></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="row explore">
+        <div class="col-lg-10">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div style="line-height:0;" class="col-lg-6 mt-5">
+                    <p>READY TO TRANSFORM YOUR CAREER?</p>
+                    <h3>Find the best career for you</h3>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+        <div class="col-lg-2 mt-5 ms-0"><button id="expbtn">hello</button></div>
+
+    </div>
+
+</div>
+
+<div class="call_and_arrow">
+    <div  class="p-4 mb-3 d-flex align-items-center justify-content-center call">
+        <h2 ><i class="bi bi-telephone-fill"></i></h2> 
+       </div>
+
+    <div class="p-4 mt-4 d-flex align-items-center justify-content-center call">
+        <h2 ><i class="bi bi-arrow-bar-up"></i></h2> 
+       </div>
+     
+  </div>

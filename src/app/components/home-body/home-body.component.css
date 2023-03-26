@@ -1,0 +1,130 @@
+.Career {
+    background-image: url('/assets/images/lap1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 26rem;
+}
+
+.Career_headding {
+    background-color: #00522de0;
+    color: white;
+    height: 26rem;
+    background-image: linear-gradient(to right, rgba(14, 84, 21, 0.8), rgba(112, 139, 120, 0.2));
+
+    opacity: .9;
+    background-blend-mode: multiply;
+}
+
+.Job_opening {
+    background-color: white;
+    height: 20rem;
+    width: 48%;
+    position: absolute;
+    margin-left: 8rem;
+    margin-top: 6rem;
+    color: #2c455f;
+    border: 1px solid rgb(202, 199, 199);
+    border-radius: 5px;
+
+}
+
+.Job_img img {
+    height: 26rem;
+    width: 100%;
+}
+
+.why_work {
+    height: 26rem;
+}
+
+.line {
+    width: 4rem;
+    border-width: 4px;
+    color: rgb(244, 89, 6);
+
+}
+
+@media screen and (max-width: 750px) {
+    .Job_opening {
+        width: 100%;
+    }
+}
+
+.Perks_benefits {
+    height: 26rem;
+    color: white;
+
+
+}
+
+.Perks_sidebox {
+    background-color: white;
+    height: 12rem;
+    width: 47%;
+    position: absolute;
+    margin-top: -7rem;
+    margin-left: 32rem;
+    border: 1px solid rgb(202, 199, 199);
+}
+
+.Perks_benefits h1 {
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 993px) {
+    .why_work {
+        margin-bottom: 10rem;
+    }
+
+    .Perks_benefits {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Perks_sidebox {
+        height: auto;
+        width: 100%;
+        position: static;
+        margin-left: 0;
+        margin-top: 0rem;
+    }
+}
+
+.Career_opp{
+   min-height: 60rem;
+    background-color:#f3f2ed;
+}
+.col-1:hover {
+    color: #00522de0;
+    border-bottom: 2px solid #00522de0 ;
+      
+  }
+  .education{
+    margin:auto;
+    width:87%;
+    /* height: 34rem; */
+    background-color: white;
+  }
+  
+  .call{
+    width:60px;
+    height:60px;
+    border: 2px solid rgb(202, 199, 199) ;
+ 
+    
+  }
+  .call i{
+    color:#00522de0 ;
+    
+  }
+  .call_and_arrow{
+    width:60px;
+    height: 200px;
+    position: fixed;
+    top:24rem;
+    right:10px ;
+    z-index: 999;
+  }
